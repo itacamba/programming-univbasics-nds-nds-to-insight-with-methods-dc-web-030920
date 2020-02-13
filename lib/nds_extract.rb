@@ -36,14 +36,15 @@ pp directors_database
 row_index = 0
 while row_index < vm.length do
   column_index = 0
+  puts "Row #{row_index} has: "
   while column_index < vm[row_index].length do
     element_index = 0
+    puts "\tColum #{column_index} has: "
     while element_index < vm[row_index][column_index].length do
-      puts "coordinates  (#{row_index},#{column_index},#{element_index}) price is: #{vm[row_index][column_index][element_index][:price]}"
+      puts "\t\tElement#{element_index} (#{row_index},#{column_index},#{element_index}) price is: #{vm[row_index][column_index][element_index][:price]}"
       element_index += 1
     end
     column_index += 1
   end
-  puts "there are #{row_index} rows in total"
   row_index += 1
 end
