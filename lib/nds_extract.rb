@@ -35,7 +35,7 @@ pp directors_database
 
 row_index = 0
 while row_index < vm.length do
-  column_index = 0  
+  column_index = 0
   while column_index < vm[row_index].length do
     element_index = 0
     while element_index < vm[row_index][column_index].length do
@@ -47,5 +47,3 @@ while row_index < vm.length do
   puts "there are #{row_index} rows in total"
   row_index += 1
 end
-
-
