@@ -28,3 +28,24 @@ def directors_totals(nds)
   p result
 end
 pp directors_database
+
+
+
+# 3 arrays and a Hash
+
+row_index = 0
+while row_index < vm.length do
+  column_index = 0  
+  while column_index < vm[row_index].length do
+    element_index = 0
+    while element_index < vm[row_index][column_index].length do
+      puts "coordinates  (#{row_index},#{column_index},#{element_index}) price is: #{vm[row_index][column_index][element_index][:price]}"
+      element_index += 1
+    end
+    column_index += 1
+  end
+  puts "there are #{row_index} rows in total"
+  row_index += 1
+end
+
+
